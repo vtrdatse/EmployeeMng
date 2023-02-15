@@ -1,0 +1,360 @@
+.app {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-image: url(/public/img/login_background.png);
+  background-position: center;
+  background-size: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+  height: 25px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+div[id="title"] {
+  text-align: center;
+}
+
+button[id="login"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 10px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+  background: #6cf0c2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+div[id="register"] {
+  padding-top: 20px;
+}
+
+a[id="link-register"] {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #01d28e;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.button1 {
+  min-width: 100px;
+  text-align: center;
+  background-color: #fff;
+  color: #0068ff;
+  border-radius: 30px;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 12px;
+  margin-right: 80px;
+  line-height: 1;
+  border: 1px solid transparent;
+  font-weight: 700;
+  border: 1px #0068ff solid;
+  text-decoration: none;
+}
+
+.button2 {
+  min-width: 100px;
+  text-align: center;
+  background-color: #0068ff;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  line-height: 1;
+  border: 1px solid transparent;
+  font-weight: 700;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+  padding-bottom: 15px;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background: #f6f6f6;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.name {
+  font-size: 15px;
+}
+
+.input {
+  padding: 5px 5px 5px 10px;
+  font-size: 15px;
+}
+
+/*______________________________________________  */
+
+/* CSS HEADER */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 0px 3%;
+  transition: all 0.3s;
+}
+
+.header-container .header__logo a {
+  color: #dddddd;
+}
+
+.header-container .header__navigate {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-container .header__navigate .header__navigate_item a {
+  color: #dddddd;
+}
+
+/*______________________________________________  */
+
+/* CSS BANNER */
+
+.banner-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.banner-container .banner__relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-container .banner__relative .banner__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.banner-container .banner__relative .banner__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-container .banner__relative .banner__text-block {
+  position: absolute;
+  top: 45%;
+  z-index: 15;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner-container
+  .banner__relative
+  .banner__text-block
+  .banner__text-block_frame {
+  border: 5px solid #8cdcc9;
+}
+
+.banner-container
+  .banner__relative
+  .banner__text-block
+  .banner__text-block_frame
+  h2 {
+  color: #8cdcc9;
+  font-size: 88px;
+  margin: 30px 200px;
+}
+
+.banner-container .banner__relative .banner-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 11;
+}
+
+.banner-container
+  .banner__relative
+  .banner__text-block
+  .banner__text-block__outside {
+  color: #8cdcc9;
+  margin-top: 15px;
+}
+
+.banner-container .banner__relative .banner__bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e4b46;
+  height: 15vh;
+}
+
+.banner-container .banner__relative .banner__bottom a {
+  color: #1e4b46;
+  background-color: #121212;
+  padding: 10px 80px;
+  border-radius: 2px;
+}
+
+/*______________________________________________  */
+
+/* MAP BANNER */
+
+.map-container {
+  height: 80vh;
+  position: relative;
+  width: 100%;
+}
+
+.map-container .map__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map-container .map__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.map-container .map-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 11;
+}
+
+.map-container .map-current {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+}
+
+.map-container .map-current iframe {
+  width: 65vw;
+  height: 60vh;
+}
+
+.map-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #34332e;
+  height: 15vh;
+  width: 100%;
+}
+
+.map-footer a {
+  color: #f4f4f4;
+  background-color: #294c45;
+  padding: 10px 80px;
+  border-radius: 2px;
+}
+
+.banner-container .banner__relative .banner__bottom a {
+  color: #1e4b46;
+  background-color: #121212;
+  padding: 10px 80px;
+  border-radius: 2px;
+}
+
+/*______________________________________________  */
+
+/* FOOTER BANNER */
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: #131313;
+}
+
+.footer-container .footer__item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container a {
+  color: #6c9e91;
+  font-size: 30px;
+  font-family: emoji;
+}
