@@ -62,7 +62,7 @@ const RegisterPage = () => {
         </div>
         <div className="input-container">
           <label className='name'>Phone number </label>
-          <input type="text" className='input'  required></input>
+          <input type="text" className='input' required></input>
           {renderErrorMessage("pass")}
         </div>
         <div className="input-container">
@@ -80,10 +80,10 @@ const RegisterPage = () => {
         </div>
         <div class="input-container">
           <div className='name'>CV</div>
-          <label for="attach-project-file-cv">                     
-            <input type="file" name="cv"  id="attach-project-file-cv" accept=".pdf,.doc,.docx,.jpg,.png" />
+          <label for="attach-project-file-cv">
+            <input type="file" name="cv" id="attach-project-file-cv" accept=".pdf,.doc,.docx,.jpg,.png" />
           </label>
-          <div class="txt-sm">Supported format: PDF, DOC, DOCX, JPG, PNG</div>         
+          <div class="txt-sm">Supported format: PDF, DOC, DOCX, JPG, PNG</div>
 
         </div>
         <div className="button-container">
