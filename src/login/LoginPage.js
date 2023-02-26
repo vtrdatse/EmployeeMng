@@ -70,17 +70,30 @@ const LoginPage = () => {
         user.username === queryForm.username &&
         user.password === queryForm.password
     );
+
+
     if (!foundUser) {
       toast.error("Data incorrect or found user!");
       return;
     }
 
-    toast.success("Successfully!");
+
+    localStorage.setItem("authEmp", JSON.stringify(foundUser));
+
 
     if (foundUser.role === "man") {
       navigate("/dash/" + foundUser.id);
+      toast.success("Successfully!");
       return;
     }
+
+    if (foundUser.role === "hr") {
+      navigate("/hr/" + foundUser.id);
+      toast.success("Hi " + foundUser.username + ', you loginning with role HR!');
+      return;
+    }
+    toast.success("Successfully!");
+
     navigate("/info/" + foundUser.id);
     return;
     // console.log(foundUser);

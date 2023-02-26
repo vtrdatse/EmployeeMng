@@ -155,7 +155,8 @@ a[id="link-register"] {
   transition: all 0.3s;
 }
 
-.header-container .header__logo a {
+.header-container .header__logo a,
+.header-container .header__logo .div a {
   color: #dddddd;
 }
 

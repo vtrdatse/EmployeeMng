@@ -13,6 +13,8 @@ import { ToastContainer } from "react-toastify";
 import Info from "./Info/Info";
 import Dashboard from "./Dashboard/Dashboard";
 import Employees from "./Dashboard/employees";
+import HrManager from "./Dashboard/HrManager";
+import Salary from "./Dashboard/Salary";
 
 const App = () => (
   <Router>
@@ -28,6 +30,10 @@ const App = () => (
       <Route path="/info/:id" element={<Info />} />
       <Route path="/dash/:id" element={<Dashboard />} />
       <Route path="/employee" element={<Employees />} />
+      <Route path="/hr/:id" element={<HrManager />} />
+      <Route path="/salary/:id" element={<Salary />} />
+
+
     </Routes>
   </Router>
 );
