@@ -109,7 +109,7 @@ export const USER = [
     },
     {
         id: "aea4e58c1",
-        username: "m",
+        username: "manager002",
         password: "1",
         role: "man",
         birthday: "10/7/2000",
@@ -136,7 +136,7 @@ export const USER = [
     },
     {
         id: "aea4e58c2",
-        username: "e",
+        username: "employee004",
         password: "1",
         role: "man",
         birthday: "10/7/2000",
@@ -163,7 +163,7 @@ export const USER = [
     },
     {
         id: "aea4e58c3",
-        username: "h",
+        username: "hr",
         password: "1",
         role: "hr",
         birthday: "10/7/2000",
